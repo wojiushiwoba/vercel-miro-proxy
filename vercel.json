@@ -1,8 +1,13 @@
 {
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "https://www.openai.com/$1"
-      }
-    ]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "https://chat.openai.com/$1",
+      "headers": {
+        "host": "chat.openai.com"
+      },
+      "methods": ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"]
+    }
+  ]
 }
