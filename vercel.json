@@ -1,0 +1,8 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "https://chat.openai.com/$1"
+      }
+    ]
+}
