@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "https://www.bing.com/search?form=MY0291&OCID=MY0291&q=Bing+Al&showconv=1/$1",
+      "dest": "https://chat.openai.com/chat$1",
       "headers": {
         "host": "chat.openai.com"
       },
